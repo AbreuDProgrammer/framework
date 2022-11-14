@@ -1,0 +1,183 @@
+/* ------------------- Colors ------------------- */
+
+:root {
+    --background: #111315;
+    --text: #7d828a;
+    --card: #202427;
+    --link: #22355e;
+    --linkOn: #054692;
+    
+    --blue: #066de7;
+    --blueBack: #d3e0fe;
+    --white: #ffffff;
+}
+
+/* ------------------- Intire Html ------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: auto;
+    height: 100%;
+    background-color: var(--background);
+    font-family: 'Quicksand', sans-serif;
+    color: var(--white);
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: var(--link);
+}
+
+a:hover {
+    color: var(--linkOn);
+}
+
+input {
+    padding: 1em;
+    border-style: solid;
+    border-color: white;
+    border-radius: 0.5em;
+    margin: 1em;
+}
+
+/* ------------------- Menu Bar ------------------- */
+
+.menu {
+    width: 100%;
+    height: 5em;
+    justify-content: space-around;
+    background-color: var(--background);
+}
+
+.itemMenu {
+    cursor: pointer;
+}
+
+.itemMenu img {
+    width:5em;
+}
+
+/* ------------------- Sites ------------------- */
+
+.sites {
+    flex-wrap: wrap;
+}
+
+.siteDiv {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+
+    min-height: 9em;
+
+    width: 100%;
+    height: 12em;
+
+    margin: 0.5em;
+    padding: 1em;
+
+    background-color: var(--card);
+    border-radius: 0.75em;
+}
+
+.siteDesc{
+    color: var(--text);
+}
+
+@media only screen and (min-width: 835px) {
+    .siteDiv {max-width: 40%;}
+}
+
+@media only screen and (min-width: 1440px) {
+    .siteDiv {max-width: 29%;}
+}
+
+@media only screen and (min-width: 1550px) {
+    .siteDiv {max-width: 30%;}
+}
+
+
+.siteInfo {
+    width: 100%;
+    height: 33%;
+    margin: auto;
+    padding: auto;
+}
+
+/* ------------------- nav-bar ------------------- */
+
+.navbar {
+    width: 0em;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--card);
+    overflow-x: hidden;
+    transition: 0.5s;
+
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.linkAdmin {
+    font-size: 1.5em;
+    margin: 1em;
+    cursor: pointer;
+    user-select: none;
+}
+
+.buttonRefresh {
+    font-size: 1.5em;
+    margin: 1em;
+    cursor: pointer;
+    user-select: none;
+    margin-top: auto;
+}
+
+/* ------------------- Admin page ------------------- */
+
+.sitesAdmin {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.formEditAdmin {
+    width: 40%;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.contentAdmin {
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.controllers {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+#search {
+    align-self: center;
+    margin: 1em;
+    width: 60%;
+}
+
+.pageAdmin {
+    flex-direction: column;
+}
